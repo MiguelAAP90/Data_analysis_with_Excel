@@ -1,4 +1,4 @@
-#Cleaning Data and first step analysis.
+#Cleaning Data.
 
 692 stations in Chicago city data, the main goal here is to analyse the first month of the data in Excel: cleaning, preparing and analysing a single part to understand the data. 
 At the end of the analysis, we going to learn how to use Advance Excel formulas, understand how the data is structured and resolve a couple of questions.
