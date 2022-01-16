@@ -90,6 +90,13 @@ Here, is clear that customers prefers to use electric and classic bikes rather t
 
 What about the percentage of use per customer related to each type of bike available??
 
+Is here where Countifs come to place.
+
+	=COUNTIFS($A$2:$A$96835,F62,$B$2:$B$96835,$G$61)
+	
+Where we have two conditionals to have one single output. here "$A$2:$A$96835,F62" is the type of Bike and $B$2:$B$96835,$G$61 is the type of customer, if the first argument is true F62= "bike_type the function would count the second argument if this second argument is G61= "type_of_member".
+
+
 
 ![image](https://user-images.githubusercontent.com/60878213/149681804-902d8886-3454-4698-acba-2dba12c77628.png)
 
