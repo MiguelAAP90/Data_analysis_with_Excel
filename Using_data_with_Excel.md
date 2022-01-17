@@ -102,11 +102,41 @@ Where we have two conditionals to have one single output. here "$A$2:$A$96835,F6
 
 ![image](https://user-images.githubusercontent.com/60878213/149681825-2596acc6-d13f-4261-bb96-e7db95470e5f.png)
 
- # Statadistics.
- now that we have more 
- ![image](https://user-images.githubusercontent.com/60878213/149746150-abc9bcb3-8c43-4cf9-b34f-a4f9b90ae29b.png)
+ # Statistics.
+ Now that we have more knowledge about the data and how this data is structured. We could continue performing this manually other analysis, but as the data increases(other 11 months to analyse) the time-consuming rises up too.
+For example, we can manually calculate the Mean, Median, Mode, Min and Max from this data set.
+
+![image](https://user-images.githubusercontent.com/60878213/149790436-a904e873-99ca-4b1c-9d6a-81a88550c464.png)
+
+This is ok, however, Pivot tables would performance a better job and almost immediately.
+
+Here are same arguments from the above table, with the exception that we separate the statistics by the two types of customers.
+
  ![image](https://user-images.githubusercontent.com/60878213/149745769-d8979210-9520-4082-84fc-ae3fd644eb54.png)
  ![image](https://user-images.githubusercontent.com/60878213/149745822-8c496124-2adf-4097-8985-ae5e46cb53a5.png)
+ 
+We can see that both types of customers use the bikes almost similar, with the majority of use between 3 and 10 minutes, respectively. With a histogram skewed to the right.
+Still, “Casual” customers tend to use the bike for a longer time of period.
+
+### Calculate the average ride_length for users by day_of_week.
+Where the number 1=monday, 2=Tuesday..etc.
+	
+	PivotFields columns = day_of_week; Rows =member_casual; Values = Average of ride_length
+
+![image](https://user-images.githubusercontent.com/60878213/149795594-51e26f4c-b291-4484-b52d-363e3f462c43.png)
+![image](https://user-images.githubusercontent.com/60878213/149796282-ffb731ba-3e8a-41b6-ab6f-38db8ec4c83e.png)
 
 
+### Number of rides for users by day_of_week
+#### Members:
+	PivotFields columns = day_of_week; Rows =member_casual; Values = ACount of ride-id
+![image](https://user-images.githubusercontent.com/60878213/149797374-1519f5a6-d91c-405e-8c44-1e3a9523fe88.png)
+![image](https://user-images.githubusercontent.com/60878213/149797443-4f1730a1-a2b4-4db9-83f4-727f2a357f9c.png)
 
+#### Casual:
+	PivotFields columns = day_of_week; Rows =member_casual; Values = ACount of ride-id
+![image](https://user-images.githubusercontent.com/60878213/149797504-2e093a40-05d0-4abd-8200-c6fd26a1ca33.png)
+![image](https://user-images.githubusercontent.com/60878213/149797536-2ba06826-fbf4-4f80-b332-06ef5b575b65.png)
+
+# Conclusion:
+Excel is a powerful tool to analyse a small data set, and we Could automatise the cleaning process recording Macros and would take around 10 min to put the other 11 data sets with the same format we just did, notwithstanding, this time we going to omit this process as we have SQL and, in my opinion, is a better tool and faster to performance when we talk about bigger data. 
