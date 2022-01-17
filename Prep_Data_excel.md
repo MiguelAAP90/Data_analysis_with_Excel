@@ -1,4 +1,4 @@
-#Cleaning Data.
+# Cleaning Data.
 
 692 stations in Chicago city data, the main goal here is to analyse the first month of the data in Excel: cleaning, preparing and analysing a single part to understand the data. 
 At the end of the analysis, we going to learn how to use Advance Excel formulas, understand how the data is structured and resolve a couple of questions.
@@ -10,7 +10,7 @@ What day of the week do customers tend to use the service?
 What type of bicycles customers are using? 
 
 
-#About the data:
+# About the data.
 
 A bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself
 apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with
@@ -31,7 +31,7 @@ As we can see we have 13 columns and around 95000 rows, after analysing we have 
 				Changed J,L columns to Float format: format > cells > Number(10 decimal)
 
 
-##Split text and numbers.
+# Split text and numbers.
 
 In column F "start_station_id" and H "end_station_id" a couple of IDs are not consistent as some are mixed with letters, after research, I found out that it's a data mistake and need to sort.  
 		![Screenshot 2022-01-16 194828](https://user-images.githubusercontent.com/60878213/149675510-7d77c0a2-8561-4d60-8d56-d1a9640bb437.png)
@@ -63,7 +63,7 @@ Right would select from right to left  by the lend of F cell and substract the l
 
 we repeat the same process with column H.
 
-#Calculate the time bike was use
+# Calculate the time bike was use
 Column C contains the date and time of when the ride started and D contains the date and time of when the same bike ends the ride. 
 To calculate the total time of use we create a new column and place the formula.
 
@@ -71,10 +71,25 @@ To calculate the total time of use we create a new column and place the formula.
 This simple would give us the total time of use.
 It is important to put this last column in time format "HH:MM:SS"
 
-#Day of the Week 
+# Day of the Week 
 One more thing I want to do is to see the day of the week the bike was taken.
 
 	=WEEKDAY(C2)
 This would give us a number from 1 to 7, where 1=Monday,2=Tuesday....etc.etc.etc 
 
 ![time_day](https://user-images.githubusercontent.com/60878213/149677692-0b5792d3-4f80-4b26-bb4d-47579f688b97.png)
+
+# Removing unnessesary data.
+
+Removing unnecessary data
+When we calculate the time of use, we notice that a couple of the data is less than a minute of use, and most of them have the same station value “start_station_name” and “end_station_name”. For the analysis of this data, we going to consider a length of time of no less than a 1 minute to reduce the data error of a customer taking a bike and placed back by mistake in the same station, reducing the duplicates. 
+![removing_data](https://user-images.githubusercontent.com/60878213/149733633-b43958cb-29c6-4b4d-9343-d62173824440.png)
+
+This is  simple as filtering with conditional, where ride_length is less than "00:01:00", and remove rows.
+
+	Filter > number filters > Less than..> range. 
+
+### We can continue cleaning this single data set but for the analysis of this we have what we need, and now  we can start answering some questions and see some relevant  numbers.
+
+https://github.com/MiguelAAP90/Data_analysis_with_Excel/blob/main/Using_data_with_Excel.md
+
