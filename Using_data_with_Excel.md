@@ -1,11 +1,11 @@
-#Playing with Data
+# Playing with Data
 After we get acquainted with the database and make some changes, we want to start to see some insights.
 
 About the Data and The cleaning process. 
 https://github.com/MiguelAAP90/Excel-_cleaning_data/blob/main/Prep_Data_excel.md.
 
 
-#separet data.
+# separet data.
 From the full Sheet of our data  we going to work this time just with four columns "rideable_type,	member_casual,	ride_length,	Week_day", 
 this with the objective of answearing our principal questions.
 
@@ -19,7 +19,7 @@ What type of bicycles customers are using?
 ![Small_data](https://user-images.githubusercontent.com/60878213/149678672-06852ba4-7102-445f-8467-1d59f74e7a83.png)
 
 
-#What type of customer do we have?
+# What type of customer do we have?
 from our new Dataset, we can see that there are two types of customers, "members" and "casual", after researching the data we know that pricing plans: single-ride passes,
 full-day passes and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers
 who purchase annual memberships are Cyclistic members.
@@ -43,7 +43,7 @@ the hypothesis is that customers tend to pay the membership to do more exercise 
 
 
 
-#Day of the week
+# Day of the week
 Remember that we change the day of the week previously and now, our column of days are numbered from 1 to 7, where 1=Monday,2=Tuesday....etc.etc.etc
 To get the correct value we have a couple of options, I chose to continue using the function.
 		
@@ -67,7 +67,7 @@ We can see that weekend days takes almost 50% of the total used per week, but sp
 
 ![Jenuary_2021](https://user-images.githubusercontent.com/60878213/149680314-e7546f08-ce78-4b25-8f89-299ec9b0b6bd.png)
 
-#type of bikes use per customers.
+# Type of bikes use per customers.
 We know that we have 3 types of bikes that customers can use:
 
 				*docked_bike
@@ -101,5 +101,12 @@ Where we have two conditionals to have one single output. here "$A$2:$A$96835,F6
 ![image](https://user-images.githubusercontent.com/60878213/149681804-902d8886-3454-4698-acba-2dba12c77628.png)
 
 ![image](https://user-images.githubusercontent.com/60878213/149681825-2596acc6-d13f-4261-bb96-e7db95470e5f.png)
+
+ # Statadistics.
+ now that we have more 
+ ![image](https://user-images.githubusercontent.com/60878213/149746150-abc9bcb3-8c43-4cf9-b34f-a4f9b90ae29b.png)
+ ![image](https://user-images.githubusercontent.com/60878213/149745769-d8979210-9520-4082-84fc-ae3fd644eb54.png)
+ ![image](https://user-images.githubusercontent.com/60878213/149745822-8c496124-2adf-4097-8985-ae5e46cb53a5.png)
+
 
 
